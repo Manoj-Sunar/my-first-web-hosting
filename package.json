@@ -1,0 +1,21 @@
+{
+  "name": "dynamic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon src/app.js -e js,hbs,css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "jQuery": "^1.7.4",
+    "mongoose": "^6.5.5",
+    "validator": "^13.7.0"
+  }
+}

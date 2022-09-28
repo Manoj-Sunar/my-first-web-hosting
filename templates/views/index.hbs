@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=Montserrat:wght@300;500;600&family=Mouse+Memoirs&family=Poiret+One&display=swap" rel="stylesheet">                 
+    
+
+
+    <title>Document</title>
+
+    <style>
+
+      *{
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+      }
+
+            
+
+               .image-style{
+                width: 500px;
+                
+               }
+
+               .image-style img{
+                width: 100%;
+               }
+
+               .hero-text h1{
+                    
+                     letter-spacing: 0.2rem;
+                     line-height: 1.5;
+                     text-shadow: 5px 4px 11px rgba(0,0,0,0.26);
+                     color: #2f2f2f;
+                     text-transform: uppercase;
+                     font-size:35px;
+               }
+
+               .hero-text h1:nth-child(2){
+                font-weight: bold;
+                color: #5222d0;
+             
+               }
+
+               .btn1,.submit-btn{
+                background-color:#ec615b;
+                color: #fff;
+                border: none;
+                border-radius: 1px;
+                letter-spacing: 0.12rem;
+                
+               }
+
+               .letter-spacing{
+                
+                letter-spacing: 0.15rem;
+                text-shadow: 5px 4px 11px rgba(0,0,0,0.26);
+              
+               }
+
+               .main-heading{
+                 color:#ec615b ;
+                 letter-spacing: 0.17rem;
+               
+               }
+
+               p{
+                color: #2f2f2f;
+                letter-spacing: 0.1rem;
+               }
+
+              
+               
+    </style>
+</head>
+
+
+<body>
+{{>navbar}}
+    
+   <div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto d-flex ">
+          <div class="row">
+          <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex flex-column justify-content-center align-items-start">
+            <h1>WE WILL HELP YOU TO</h1>
+            <h1 class="text-primary">GROW YOUR BUSINESS</h1>
+            <P>We Are The Team Of <span class="bold-style">Professional Developer</span> </P>
+            <button class="btn-style btn1 p-1 ps-3 pe-3 mt-3">Read more</button>
+          </div>
+
+
+             {{!-- right side --}}
+          <div class=" image-style col-md-6 col-12 hero-text order-md-1 order-0">
+                  <div class="image">
+                    <img src="/img/img1.jpg" alt="">
+                  </div>
+
+              </div>
+          </div>
+
+        </div>
+    </div>
+   </div>
+
+               {{!-- About --}}
+               {{>about}}
+
+               {{!-- Services --}}
+               {{>service}}
+
+               {{!-- google map --}}
+               {{>map}}
+
+               {{!-- Contact us --}}
+
+               {{>contact}}
+</body>
+</html>
